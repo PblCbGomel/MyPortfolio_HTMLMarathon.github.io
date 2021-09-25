@@ -1,0 +1,139 @@
+html, body, p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 980px;
+    font-size: 36px;
+}
+
+h2 {
+    color: black;
+    font-weight: 900;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.new-font {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.block {
+    width: 900px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.paragraph {
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.block.no-padding-top {
+    padding-top: 0;
+}
+ /* Форматированный текст */
+.bold-text {
+    font-weight: 900;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.cyan-text {
+    color: #00ECBB;
+}
+
+.white-text {
+    color: white;
+}
+
+.gray-text {
+    color: #433A5E;
+}
+
+.purple {
+    background-color: #6A13EB;
+}
+
+/* Форматирование картинок */
+.circle-img {
+    border-radius: 50%;
+}
+
+/* Блок с лого */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.name-tag {
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+/* Блок опыта */
+.exp { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.exp li {
+    margin: 10px 0;
+}
+
+/* Блок достижений */
+.achievemnts {
+    list-style-image: url("./li/icon-ok.png");
+    line-height: 30px;
+}
+
+.str-points {
+    list-style-image: url("./li/icon-ok-2.png");
+}
+
+/* Блок с цитатой */
+.quote {
+    background-image: url("./backgrounds/quote.png");
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+
+.quote p {
+    font-size: 24px;
+}
+
+/* Блок "О себе" */
+.pictures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.pictures img:hover {
+    box-shadow: 0 0 6px 2px rgba(114, 109, 109, 60%);
+}

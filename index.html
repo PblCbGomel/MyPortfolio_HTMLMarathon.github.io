@@ -4,98 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-        html, body, p {
-            padding: 0;
-            margin: 0;
-        }
-
-        h2 {
-            color: black;
-        }
-
-        .new-font {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .bold-text {
-            font-weight: bold;
-        }
-
-        .italic-text {
-            font-style: italic;
-        }
-
-        .cyan-text {
-            color: #00ECBB;
-        }
-
-        .white-text {
-            color: white;
-        }
-
-        .gray-text {
-            color: #433A5E;
-        }
-
-        .purple {
-            background-color: #6A13EB;
-        }
-
-        .block {
-            width: 900px;
-            margin: auto;
-        }
-
-        .nav, .exp {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav li {
-            display: inline-block;
-            margin: 5px;
-            padding: 5px;
-            cursor: pointer;
-        }
-
-        .achievemnts {
-            list-style-image: url("./li/icon-ok.png");
-        }
-
-        .str-points {
-            list-style-image: url("./li/icon-ok-2.png");
-        }
-
-        .quote {
-            background-image: url("./backgrounds/quote.png");
-            background-position: center;
-            background-size: contain;
-            padding: 30px;
-        }
-
-    </style>
 </head>
 <body class="gray-text new-font">
     <div>
         <div class="purple">
             <div class="block">
-                <p><span class="bold-text cyan-text">Евгений Шевцов</p>
-
                 <ul class="cyan-text nav">
+                    <li><span class="bold-text cyan-text name-tag">ЕВГЕНИЙ<br>ШЕВЦОВ</span></li>
                     <li>Опыт <s>работы</s> учёбы</li>
                     <li>Достижения</li>
-                    <li>Мои сильные стороны</li>
+                    <li>Сильные стороны</li>
                     <li>Личное</li>
                     <li>Контакты</li>
                 </ul>
                 
-                <img src="./img/MyPhoto.png" alt="Портрет" width="100%">
-                <p class="white-text">
-                    Студент Белорусского государственного университета. Учусь на втором курсе по специальности 
-                    <span class="bold-text">"прикладная математика"</span>.
+                <img class="logo-img" src="./img/MyPhoto.png" alt="Портрет">
+                <p class="white-text paragraph">
+                    Студент Белорусского государственного университета. Учусь на втором курсе по специальности "прикладная математика".
                 </p>
         
                 <h1 class="white-text">Студент-прогер с чашкой чая и кусочком тортика</h1>
@@ -103,7 +30,7 @@
         </div>      
 
         <div class="block">
-            <h2>Опыт <s>работы</s> учёбы:</h2>
+            <h2>Опыт <s>работы</s> учёбы</h2>
 
             <ol class="exp">
                 <li><span class="bold-text">1 сентября 2009 - 31 мая 2020</span>: шкИла</li>
@@ -111,48 +38,51 @@
             </ol>
         </div>
 
-        <div class="block">
-            <h2>Мои достижения:</h2>
+        <div class="block no-padding-top">
+            <h2>Мои достижения</h2>
 
             <ul class="achievemnts">
                 <li><span class="bold-text">Научился делать тортики</span><br>На этом мои скиллы готовки закончились</li>
                 <li><span class="bold-text">Не прогулял ни одну лекцию по ГА</span><br>И сдал экзамен на 10</li>
                 <li><span class="bold-text">Пережил 2 сессии</span><br>Осталось ещё 8, но я обязательно выживу</li>
-                <li><span class="bold-text">Купил маску с рысью</span><br>Ну а что?</li>
+                <li><span class="bold-text">Купил маску с рысью</span><br>Ну а что?.. ковид, все дела.</li>
             </ul>
         </div>
 
-        <div class="block">
-            <h2>Мои сильные стороны:</h2>
+        <div class="block no-padding-top">
+            <h2>Мои сильные стороны</h2>
 
             <ul class="str-points bold-text">
-                <li>Встаю по будильнику (почти всегда)</li>
-                <li>Знаю, как считать интеграл</li>
-                <li>Правша</li>
-                <li>Могу есть мороженое зимой</li>
+                <li>встаю по будильнику (почти всегда)</li>
+                <li>знаю, как считать интеграл</li>
+                <li>правша</li>
+                <li>могу есть мороженое зимой</li>
             </ul>
         </div>
 
         <div class="quote">
             <div class="block">
                 <h2 class="white-text">Мой принцип работы</h2>
-                <p class="white-text italic-text">"Чашка чая, кусочек тортика и... спать."</p> 
+                <p class="white-text italic-text">«Чашка чая, кусочек тортика и... спать.»</p> 
             </div>
         </div>
 
         <div class="block">
-            <h2>Немного о себе:</h2>
-            <p>
-                Учучь в БГУ на факультете прикладной математики и информатики, специальность: прикладная математика 
+            <h2>Немного о себе</h2>
+            <p class="paragraph">
+                Учусь в БГУ на факультете прикладной математики и информатики, специальность: прикладная математика 
                 (уже на целом втором курсе). Как было понятно из текста выше, люблю тортики, да и просто сладкое. 
                 Хочу попрактиковаться в вёрстке для души + в копилку репозиторий на гитхаб.
             </p>
-            <img src="./img/personal-img-1.png" alt="picture 1">
-            <img src="./img/personal-img-2.png" alt="picture 2">
-            <img src="./img/personal-img-3.png" alt="picture 3">
+            <div class="pictures">
+                <img src="./img/personal-img-1.png" alt="picture 1" class="circle-img">
+                <img src="./img/personal-img-2.png" alt="picture 2" class="circle-img">
+                <img src="./img/personal-img-3.png" alt="picture 3" class="circle-img">
+            </div>
         </div>
 
-        <div class="block">
+        <div class="block no-padding-top">
+            <h2>Контакт</h2>
             <form action="">
                 <input type="text" name="" id="">
             </form>
