@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
 html, body, p {
     padding: 0;
     margin: 0;
@@ -22,7 +27,7 @@ h2 {
 }
 
 .block {
-    width: 900px;
+    width: 980px;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -45,8 +50,8 @@ h2 {
     font-style: italic;
 }
 
-.cyan-text {
-    color: #00ECBB;
+.darkred-text {
+    color: #660b0b;
 }
 
 .white-text {
@@ -54,11 +59,19 @@ h2 {
 }
 
 .gray-text {
-    color: #433A5E;
+    color: #3d3655;
 }
 
-.purple {
-    background-color: #6A13EB;
+.black-text {
+    color: black;
+}
+
+.gold {
+    background-color: rgb(218, 165, 32);
+}
+
+.text-with-shadow {
+    text-shadow: 0 0 5px black;
 }
 
 /* Форматирование картинок */
@@ -84,8 +97,18 @@ h2 {
     cursor: pointer;
 }
 
+.nav li a {
+    text-decoration: none;
+    color: #7a0d0d;
+}
+
+.nav li a:hover {
+    text-shadow: 0 0 3px rgba(114, 109, 109, 60%);
+}
+
 .logo-img {
     width: 100%;
+    height: 500px;
 }
 
 .name-tag {
@@ -106,12 +129,29 @@ h2 {
 
 /* Блок достижений */
 .achievemnts {
-    list-style-image: url("./li/icon-ok.png");
     line-height: 30px;
+    list-style: none;
 }
 
-.str-points {
-    list-style-image: url("./li/icon-ok-2.png");
+.achievemnts li {
+    background-image: url("./li/icon-ok.png");
+    background-repeat: no-repeat;
+    margin: 20px 0px;
+    padding-left: 70px;
+    margin-left: -70px;
+}
+
+.str-points{
+    list-style: none;  
+    line-height: 60px;  
+}
+
+.str-points li {
+    background-image: url("./li/icon-ok-2.png");
+    background-repeat: no-repeat;
+    margin: 20px 0px;
+    padding-left: 70px;
+    margin-left: -70px;
 }
 
 /* Блок с цитатой */
@@ -136,4 +176,56 @@ h2 {
 
 .pictures img:hover {
     box-shadow: 0 0 6px 2px rgba(114, 109, 109, 60%);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Форма */
+#contact-form input, #contact-form textarea {
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border: 3px solid #fcf839;
+}
+
+textarea {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+    resize: none;
+}
+
+input#submit {
+    width: 350px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #f0f17e;
+    color: #746d11;
+}
+
+/*Ввернуться вверх*/
+
+.to-start {
+    position: fixed;
+    cursor:pointer;
+    bottom: 5%; 
+    right: -40%;
+}
+
+.to-start a img {
+    transition: 0.8s;
+    border-radius: 50%;
+}
+
+.to-start a:hover img {
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    box-shadow: 0 0 6px 2px rgba(82, 78, 78, 0.6);
 }

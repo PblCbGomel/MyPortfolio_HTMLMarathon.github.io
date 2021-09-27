@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
-<body class="gray-text new-font">
+<body class="gray-text new-font" id="navigation">
+    <div class="to-start" >
+        <a href="#" title="Вернуться наверх"><img src="buttons/up_button.png" width="10%" height="10%"> </a>
+    </div>
     <div>
-        <div class="purple">
+        <div class="gold">
             <div class="block">
-                <ul class="cyan-text nav">
-                    <li><span class="bold-text cyan-text name-tag">ЕВГЕНИЙ<br>ШЕВЦОВ</span></li>
-                    <li>Опыт <s>работы</s> учёбы</li>
-                    <li>Достижения</li>
-                    <li>Сильные стороны</li>
-                    <li>Личное</li>
-                    <li>Контакты</li>
+                <ul class="darkred-text nav">
+                    <li><a href="https://vk.com/pblcb_gomel" target="_blank">
+                        <span class="bold-text darkred-text name-tag">ЕВГЕНИЙ<br>ШЕВЦОВ</span></a></li>
+                    <li><a href="#experience">Опыт <s>работы</s> учёбы</a></li>
+                    <li><a href="#achievemnts">Достижения</a></li>
+                    <li><a href="#strong">Сильные стороны</a></li>
+                    <li><a href="#private">Личное</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
                 
                 <img class="logo-img" src="./img/MyPhoto.png" alt="Портрет">
@@ -29,7 +33,7 @@
             </div>
         </div>      
 
-        <div class="block">
+        <div class="block" id="experience">
             <h2>Опыт <s>работы</s> учёбы</h2>
 
             <ol class="exp">
@@ -38,7 +42,7 @@
             </ol>
         </div>
 
-        <div class="block no-padding-top">
+        <div class="block no-padding-top" id="achievemnts">
             <h2>Мои достижения</h2>
 
             <ul class="achievemnts">
@@ -49,7 +53,7 @@
             </ul>
         </div>
 
-        <div class="block no-padding-top">
+        <div class="block no-padding-top" id="strong">
             <h2>Мои сильные стороны</h2>
 
             <ul class="str-points bold-text">
@@ -60,14 +64,14 @@
             </ul>
         </div>
 
-        <div class="quote">
+        <div class="quote" id="motto">
             <div class="block">
                 <h2 class="white-text">Мой принцип работы</h2>
-                <p class="white-text italic-text">«Чашка чая, кусочек тортика и... спать.»</p> 
+                <p class="white-text bold-text italic-text text-with-shadow">«Чашка чая, кусочек тортика и... спать»</p> 
             </div>
         </div>
 
-        <div class="block">
+        <div class="block" id="private">
             <h2>Немного о себе</h2>
             <p class="paragraph">
                 Учусь в БГУ на факультете прикладной математики и информатики, специальность: прикладная математика 
@@ -81,10 +85,13 @@
             </div>
         </div>
 
-        <div class="block no-padding-top">
+        <div class="block no-padding-top" id="contacts">
             <h2>Контакт</h2>
-            <form action="">
-                <input type="text" name="" id="">
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="FIO" id="" placeholder="Ф.И.О.">
+                <input type="email" name="email" id="" placeholder="Email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <input type="submit" name="Submit" id="submit" value="Отправить">
             </form>
         </div>
     </div>
