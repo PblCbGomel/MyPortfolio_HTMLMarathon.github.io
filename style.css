@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     user-select: none;
+    cursor: url("./cursors/cursos-default.png") 25 25, default;
 }
 
 html, body, p {
@@ -8,9 +9,14 @@ html, body, p {
     margin: 0;
 }
 
+a {
+    cursor: url("./cursors/cursos-pointer.png") 25 25, pointer;
+}
+
 h1 {
     font-weight: 980px;
     font-size: 36px;
+    margin-top: 0;
 }
 
 h2 {
@@ -29,7 +35,7 @@ h2 {
 .block {
     width: 980px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -40,6 +46,21 @@ h2 {
 
 .block.no-padding-top {
     padding-top: 0;
+}
+
+.footer {
+    background-color: rgb(199, 146, 12);
+}
+
+.block-footer {
+    width: 560px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: blanchedalmond;
 }
  /* Форматированный текст */
 .bold-text {
@@ -67,7 +88,7 @@ h2 {
 }
 
 .gold {
-    background-color: rgb(218, 165, 32);
+    background-color: rgb(199, 146, 12);
 }
 
 .text-with-shadow {
@@ -94,7 +115,6 @@ h2 {
     display: inline-block;
     margin: 5px;
     padding: 5px;
-    cursor: pointer;
 }
 
 .nav li a {
@@ -106,9 +126,20 @@ h2 {
     text-shadow: 0 0 3px rgba(114, 109, 109, 60%);
 }
 
-.logo-img {
-    width: 100%;
-    height: 500px;
+.logo-container {
+    width: 980px;
+    height: 547px;
+    background-image: url("./img/MyPhoto.png");
+    background-size: cover;
+    box-shadow: 0px -120px 50px 0px rgba(0, 0, 0, 0.8) inset;
+}
+
+.logo-paragraph {
+    position: relative;
+    padding: 0 60px;
+    top: -90px;
+    margin: 0;
+    line-height: 30px;
 }
 
 .name-tag {
@@ -136,22 +167,32 @@ h2 {
 .achievemnts li {
     background-image: url("./li/icon-ok.png");
     background-repeat: no-repeat;
-    margin: 20px 0px;
+    margin: 20px 0px;  
     padding-left: 70px;
-    margin-left: -70px;
+    margin-left: -50px;
+}
+
+.achievemnts li:hover {
+    background-image: url("./li/icon-ok-hover.png");
 }
 
 .str-points{
     list-style: none;  
-    line-height: 60px;  
+    line-height: 60px;   
+    column-count: 2;
 }
 
 .str-points li {
     background-image: url("./li/icon-ok-2.png");
     background-repeat: no-repeat;
-    margin: 20px 0px;
+    margin: 20px 0px;  
     padding-left: 70px;
-    margin-left: -70px;
+    margin-left: -50px;
+    margin-top: 0;
+}
+
+.str-points li:hover {
+    background-image: url("./li/icon-ok-2-hover.png");
 }
 
 /* Блок с цитатой */
@@ -175,7 +216,11 @@ h2 {
 }
 
 .pictures img:hover {
-    box-shadow: 0 0 6px 2px rgba(114, 109, 109, 60%);
+    box-shadow: 0 0 20px 2px rgba(255, 159, 15, 0.6);
+}
+
+.pictures img:active {
+    filter: brightness(.9);
 }
 
 #contact-form {
@@ -192,7 +237,11 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     outline: none;
-    border: 3px solid #fcf839;
+    border: 3px solid #fffb00;
+}
+
+#contact-form input:hover, #contact-form textarea:hover {
+    border: 3px solid #f5f394;
 }
 
 textarea {
@@ -202,9 +251,14 @@ textarea {
 }
 
 input#submit {
+    cursor: url("./cursors/cursos-pointer.png") 25 25, pointer;
     width: 350px;
-    cursor: pointer;
     font-size: 24px;
+    background-color: #dee058;
+    color: #615b0b;
+}
+
+input#submit:hover {
     background-color: #f0f17e;
     color: #746d11;
 }
@@ -213,19 +267,22 @@ input#submit {
 
 .to-start {
     position: fixed;
-    cursor:pointer;
     bottom: 5%; 
     right: -40%;
 }
 
 .to-start a img {
-    transition: 0.8s;
+    transition: 0.3s;
     border-radius: 50%;
 }
 
 .to-start a:hover img {
-    -webkit-transform: scale(1.25);
-    -ms-transform: scale(1.25);
+    transition: 0.3s;
     transform: scale(1.25);
     box-shadow: 0 0 6px 2px rgba(82, 78, 78, 0.6);
+}
+
+.to-start a:active img {
+    transition: 0.1s;
+    transform: scale(1.15);
 }

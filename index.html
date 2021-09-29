@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script>
+        function push() {
+            alert("Что-то будет отправлено куда-то...");
+            location.replace('#');
+            location.reload();
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +16,7 @@
 </head>
 <body class="gray-text new-font" id="navigation">
     <div class="to-start" >
-        <a href="#" title="Вернуться наверх"><img src="buttons/up_button.png" width="10%" height="10%"> </a>
+        <a href="#" title="Вернуться наверх"><img src="buttons/up_button.png" width="10%" height="10%"></a>
     </div>
     <div>
         <div class="gold">
@@ -23,9 +30,8 @@
                     <li><a href="#private">Личное</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
-                
-                <img class="logo-img" src="./img/MyPhoto.png" alt="Портрет">
-                <p class="white-text paragraph">
+                <div class="logo-container"></div>
+                <p class="white-text logo-paragraph">
                     Студент Белорусского государственного университета. Учусь на втором курсе по специальности "прикладная математика".
                 </p>
         
@@ -61,6 +67,8 @@
                 <li>знаю, как считать интеграл</li>
                 <li>правша</li>
                 <li>могу есть мороженое зимой</li>
+                <li>учу front-end</li>
+                <li>имею шуфлядку с чаем</li>
             </ul>
         </div>
 
@@ -91,8 +99,14 @@
                 <input type="text" name="FIO" id="" placeholder="Ф.И.О.">
                 <input type="email" name="email" id="" placeholder="Email">
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-                <input type="submit" name="Submit" id="submit" value="Отправить">
+                <input type="button" onclick="push()" name="Submit" id="submit" value="Отправить">
             </form>
+        </div>
+        <div class="footer">
+            <div class="block-footer italic-text">
+                Сайт создан в рамках марафона от ITEAOnline. Автор любит тортики. Все существа на фотографиях вымышлены,
+                а совпадения случайны. Контент возможно будет дополняться.
+            </div>
         </div>
     </div>
 </body>
