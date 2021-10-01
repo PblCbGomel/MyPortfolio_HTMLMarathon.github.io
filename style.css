@@ -14,7 +14,7 @@ a {
 }
 
 h1 {
-    font-weight: 980px;
+    font-weight: 50%;
     font-size: 36px;
     margin-top: 0;
 }
@@ -50,6 +50,7 @@ h2 {
 
 .footer {
     background-color: rgb(199, 146, 12);
+    max-width: 100%;
 }
 
 .block-footer {
@@ -88,6 +89,7 @@ h2 {
 }
 
 .gold {
+    max-width: 100%;
     background-color: rgb(199, 146, 12);
 }
 
@@ -215,6 +217,10 @@ h2 {
     padding-top: 20px;
 }
 
+.pictures img{
+    max-width: 100%;
+}
+
 .pictures img:hover {
     box-shadow: 0 0 20px 2px rgba(255, 159, 15, 0.6);
 }
@@ -267,6 +273,8 @@ input#submit:hover {
 
 .to-start {
     position: fixed;
+    max-width: 50%;
+    max-height: 50%;
     bottom: 5%; 
     right: -40%;
 }
