@@ -1,10 +1,10 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
     h1, h2 {
-        font-size: 24px;       
+        font-size: 24px;        
     }
 
     .block {
-        width: 600px;
+        width: 560px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -37,7 +37,6 @@
     }
 
     .nav li {
-        display: inline-block;
         margin: 3px;
         padding: 3px;
     }
@@ -50,11 +49,15 @@
     
     .name-tag {
         font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .achievemnts {
+        line-height: 25px;
     }
 
     .achievemnts li {
-        background-image: url("./li/icon-ok.png");
-        background-repeat: no-repeat;
+        background-position: left;
         margin: 20px 0px;  
         padding-left: 70px;
         margin-left: -40px;
@@ -65,8 +68,7 @@
     }
 
     .str-points li {
-        background-image: url("./li/icon-ok-2.png");
-        background-repeat: no-repeat;
+        background-position: left;
         margin: 20px 0px;  
         padding-left: 70px;
         margin-left: -40px;
@@ -113,16 +115,8 @@
         border: 2px solid #f5f394;
     }
     
-    textarea {
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        resize: none;
-    }
-    
     input#submit {
-        cursor: url("./cursors/cursos-pointer.png") 25 25, pointer;
         width: 250px;
         font-size: 18px;
-        background-color: #dee058;
-        color: #615b0b;
     }
 }

@@ -1,0 +1,137 @@
+@media screen and (max-width: 420px) {
+    h1, h2 {
+        font-size: 8px;        
+    }
+
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    .block {
+        width: 220px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .paragraph {
+        margin: 0;
+        line-height: 10px;
+        
+    }
+
+    .new-font {
+        font-size: 6px;
+    }
+
+    .logo-container {
+        height: 120px;
+        box-shadow: 0px -40px 50px 0px rgba(0, 0, 0, 0.8) inset;
+    }
+
+    .text-with-shadow {
+        text-shadow: 0 0 2px black;
+    }
+
+    .nav {
+        margin-bottom: 5px;
+        font-size: 4px;
+    }
+
+    .nav li {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .logo-paragraph {
+        padding: 0 20px;
+        top: -30px;
+        line-height: 8px;
+    }
+    
+    .name-tag {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .achievemnts {
+        line-height: 10px;
+    }
+
+    .achievemnts li {
+        background-position: left;
+        background-size: 8%;
+        margin: 0px;  
+        padding-left: 25px;
+        margin-left: -40px;
+    }
+
+    .str-points{
+        line-height: 20px;   
+        column-count: 1;
+    }
+
+    .str-points li {
+        background-position: left;
+        background-size: 8%;
+        margin: 5px 0px;  
+        padding-left: 25px;
+        margin-left: -40px;
+        margin-top: 0;
+    }
+
+    .quote {
+        padding: 15px;
+    }
+    
+    .quote p {
+        font-size: 8px;
+    }
+
+    .pictures {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .pictures img{
+        max-width: 100%;
+    }
+
+    .circle-img {
+        width: 30%;
+        height: 30%;
+    }
+
+    #contact-form input, #contact-form textarea {
+        width: 95%;
+        padding: 5px;
+        margin-bottom: 5px;
+        font-size: 8px;
+        border: 1px solid #fffb00;
+    }
+    
+    #contact-form input:hover, #contact-form textarea:hover {
+        border: 1px solid #f5f394;
+    }
+    
+    input#submit {
+        width: 100px;
+        font-size: 8px;
+    }
+
+    textarea {
+        height: 40px;
+    }
+
+    .block-footer {
+        width: 120px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 2px;
+    }
+
+    .to-start {
+        display: none;
+    }
+}
