@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <script>
-        function push() {
-            alert("Что-то будет отправлено куда-то...");
-            location.replace('#');
-            location.reload();
-        }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style420.css">
-    <link rel="stylesheet" href="style768.css">
-    <link rel="stylesheet" href="style1024.css">
+    <script src="./scripts/form.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style420.css">
+    <link rel="stylesheet" href="./styles/style768.css">
+    <link rel="stylesheet" href="./styles/style1024.css">
     <title>Portfolio</title>
 </head>
 <body class="gray-text new-font" id="navigation">
@@ -99,10 +93,10 @@
         <div class="block no-padding-top" id="contacts">
             <h2>Контакт</h2>
             <form action="/" method="POST" id="contact-form">
-                <input type="text" name="FIO" id="" placeholder="Ф.И.О.">
-                <input type="email" name="email" id="" placeholder="Email">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-                <input type="button" onclick="push()" name="Submit" id="submit" value="Отправить">
+                <input type="text" name="FIO" id="fio" placeholder="Ф.И.О.">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <textarea name="message" id="text" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <input type="button" name="Submit" id="submit" value="Отправить" onclick="writeToFile()">
             </form>
         </div>
 

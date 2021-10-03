@@ -76,9 +76,6 @@
     }
 
     .quote {
-        background-image: url("./backgrounds/quote.png");
-        background-position: center;
-        background-size: cover;
         padding: 30px;
     }
     
