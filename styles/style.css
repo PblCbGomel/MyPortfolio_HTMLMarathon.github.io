@@ -93,6 +93,10 @@ h2 {
     background-color: rgb(199, 146, 12);
 }
 
+.center-text {
+    text-align: center;
+}
+
 .text-with-shadow {
     text-shadow: 0 0 5px black;
 }
@@ -229,6 +233,31 @@ h2 {
     filter: brightness(.9);
 }
 
+/* Мои контакты */
+.my-contacts-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+}
+
+.contacts-img:hover {
+    box-shadow: 0 0 20px 2px rgb(226, 255, 63);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.contacts-img:active {
+    transition: 0.1s;
+    box-shadow: 0 0 18px 2px rgb(154, 177, 24);
+    transform: scale(0.9);
+}
+
 /* Форма */
 #contact-form {
     display: flex;
@@ -273,15 +302,15 @@ input#submit:hover {
 
 .to-start {
     position: fixed;
-    max-width: 50%;
-    max-height: 50%;
-    bottom: 5%; 
-    right: -40%;
+    bottom: 40px;
+    right: 60px; 
 }
 
 .to-start a img {
     transition: 0.3s;
     border-radius: 50%;
+    width: 80px;
+    height: 80px;
 }
 
 .to-start a:hover img {

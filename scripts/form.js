@@ -8,3 +8,7 @@ function writeToFile() {
     location.replace('#');
     location.reload();
 }
+
+function dontWork() {
+    alert("Ссылка временно не работает :(");
+}
