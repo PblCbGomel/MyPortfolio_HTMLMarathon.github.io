@@ -9,6 +9,7 @@ function writeToFile() {
     location.reload();
 }
 
-function dontWork() {
-    alert("Ссылка временно не работает :(");
+function discordLink() {
+    navigator.clipboard.writeText("Envy#8637");
+    alert("Ссылка временно не работает :(\nАйди дискорда скопировано в буфер обмена: Envy#8637");
 }
